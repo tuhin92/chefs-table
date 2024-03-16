@@ -9,8 +9,8 @@ const Foods = () => {
     },[])
 
     return (
-        <div>
-            
+        <div className="md:w-2/3">
+            <h1>Foods: {foods.length}</h1>
         </div>
     );
 };

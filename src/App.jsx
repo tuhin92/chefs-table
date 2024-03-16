@@ -1,5 +1,6 @@
 import './App.css'
 import Banner from './component/Banner/Banner'
+import Cart from './component/Cart/Cart'
 import Foods from './component/Foods/Foods'
 import Navbar from './component/Navbar/Navbar'
 
@@ -9,7 +10,11 @@ function App() {
     <>
       <Navbar></Navbar>
       <Banner></Banner>
-      <Foods></Foods>
+
+      <div className='md:flex container mx-auto'>
+        <Foods></Foods>
+        <Cart></Cart>
+      </div>
     </>
   )
 }
