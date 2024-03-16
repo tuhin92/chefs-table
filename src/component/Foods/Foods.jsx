@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import Food from "../Food/Food";
 import './Foods.css'
+import PropTypes from 'prop-types'
 
-const Foods = () => {
+const Foods = ({handleAddToCart}) => {
     const [foods, setFoods] = useState([]);
     useEffect(() =>{
         fetch('Recipes.json')
@@ -17,10 +18,14 @@ const Foods = () => {
                 foods.map(food => <Food 
                     key={food.recipe_id} 
                     food={food}
+                    handleAddToCart={handleAddToCart}
                     ></Food>)
             }
         </div>
     );
 };
 
+Foods.propTypes = {
+    handleAddToCart: PropTypes.func
+}
 export default Foods;
