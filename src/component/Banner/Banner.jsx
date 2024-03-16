@@ -14,7 +14,14 @@ const Banner = () => {
                     </div>
                 </div>
             </div>
+
+            {/* Our Recipes part */}
+            <div className="py-14 text-center">
+                <h1 className="text-4xl font-semibold">Our Recipes</h1>
+                <p className="text-lg text-[#59565e]">Embark on a flavorful journey with Our Recipes showcasing iconic Bengali dishes like Shorshe Ilish (Hilsa in Mustard Sauce),Chingri Malai Curry <br /> (Prawn Coconut Curry),  and Mishti Doi (Sweet Yogurt). Delight in the authentic tastes of Bengal recipes.</p>
+            </div>
         </div>
+        
     );
 };
 
