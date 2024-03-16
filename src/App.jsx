@@ -11,7 +11,7 @@ function App() {
       <Navbar></Navbar>
       <Banner></Banner>
 
-      <div className='md:flex container mx-auto'>
+      <div className='md:flex container mx-auto gap-12'>
         <Foods></Foods>
         <Cart></Cart>
       </div>

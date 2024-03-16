@@ -7,7 +7,7 @@ const Food = ({food}) => {
             <div className='my-3'>
                 <div className="card card-compact bg-base-100 shadow-xl">
                     <figure>
-                        <img src={recipe_image} alt="Food" />
+                        <img className='w-full' src={recipe_image} alt="Food" />
                     </figure>
                     <div className="card-body">
                         <h2 className="card-title">{recipe_name}</h2>
